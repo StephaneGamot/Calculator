@@ -45,7 +45,7 @@
   background-color: #f9f9f9;
   cursor: pointer;
   transition: all 0.1s ease;
-  box-shadow: 0 4px 8px #000000, 0px -1px 6px #41484e;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
 }
 
 .grid button:hover {
@@ -53,8 +53,8 @@
 }
 
 .grid button:active {
-  box-shadow: 0 2px 4px #000000; /* Réduisez l'ombre pour donner l'impression d'être enfoncé */
-  transform: translateY(0.5px); /* Déplacez légèrement le bouton vers le bas */
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Réduisez l'ombre pour donner l'impression d'être enfoncé */
+  transform: translateY(0.3px); /* Déplacez légèrement le bouton vers le bas */
 }
 
 
@@ -65,4 +65,17 @@
   background-color: crimson !important;
   border: crimson !important;
   color: whitesmoke;
+ }
+ .numbersButton {
+  background-color: darkcyan !important;
+  border: darkcyan !important;
+ }
+ .clearAllButton {
+  color: crimson;
+  font-weight: 700;
+ }
+
+ .handleOperatorButton {
+  font-weight: 700;
+  color:darkcyan;
  }

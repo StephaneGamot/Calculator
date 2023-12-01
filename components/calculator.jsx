@@ -125,27 +125,27 @@ export default function Calculator() {
   {result === "Erreur de calcul" && <p className={styles.errorMessage}>Veuillez entrer une expression valide.</p>}
 </div>
 			<div className={styles.grid}>
-				<button onClick={clearAll}>C</button>
+				<button className={styles.clearAllButton} onClick={clearAll}>C</button>
 				<button onClick={toggleSign}>-/+</button>
 				<button onClick={handleOpenParenthesis}>(</button>
 				<button onClick={handleCloseParenthesis}>)</button>
 				<button onClick={handlePercentage}>%</button>
 				<button onClick={handleSquareRoot} disabled={isNegative()}>√</button>
 				<button onClick={handleSquare}>x²</button>
-				<button onClick={() => handleOperator("+")} disabled={!calculation || /[\+\-\*\/]$/.test(calculation)}>+</button>
-				<button onClick={() => handleDigit("7")}>7</button>
-				<button onClick={() => handleDigit("8")}>8</button>
-				<button onClick={() => handleDigit("9")}>9</button>
-				<button onClick={() => handleOperator("-")} disabled={!calculation || /[\+\-\*\/]$/.test(calculation)}>-</button>
-				<button onClick={() => handleDigit("4")}>4</button>
-				<button onClick={() => handleDigit("5")}>5</button>
-				<button onClick={() => handleDigit("6")}>6</button>
-				<button onClick={() => handleOperator("*")} disabled={!calculation || /[\+\-\*\/]$/.test(calculation)}>x</button>
-				<button onClick={() => handleDigit("1")}>1</button>
-				<button onClick={() => handleDigit("2")}>2</button>
-				<button onClick={() => handleDigit("3")}>3</button>
-				<button onClick={() => handleOperator("/")} disabled={!calculation || /[\+\-\*\/]$/.test(calculation)}>/</button>
-				<button onClick={() => handleDigit("0")}>0</button>
+				<button className={styles.handleOperatorButton} onClick={() => handleOperator("+")} disabled={!calculation || /[\+\-\*\/]$/.test(calculation)}>+</button>
+				<button className={styles.numbersButton} onClick={() => handleDigit("7")}>7</button>
+				<button className={styles.numbersButton} onClick={() => handleDigit("8")}>8</button>
+				<button className={styles.numbersButton} onClick={() => handleDigit("9")}>9</button>
+				<button className={styles.handleOperatorButton} onClick={() => handleOperator("-")} disabled={!calculation || /[\+\-\*\/]$/.test(calculation)}>-</button>
+				<button className={styles.numbersButton} onClick={() => handleDigit("4")}>4</button>
+				<button className={styles.numbersButton} onClick={() => handleDigit("5")}>5</button>
+				<button className={styles.numbersButton}onClick={() => handleDigit("6")}>6</button>
+				<button className={styles.handleOperatorButton} onClick={() => handleOperator("*")} disabled={!calculation || /[\+\-\*\/]$/.test(calculation)}>x</button>
+				<button className={styles.numbersButton} onClick={() => handleDigit("1")}>1</button>
+				<button className={styles.numbersButton} onClick={() => handleDigit("2")}>2</button>
+				<button className={styles.numbersButton} onClick={() => handleDigit("3")}>3</button>
+				<button className={styles.handleOperatorButton} onClick={() => handleOperator("/")} disabled={!calculation || /[\+\-\*\/]$/.test(calculation)}>/</button>
+				<button className={styles.numbersButton} onClick={() => handleDigit("0")}>0</button>
 				<button onClick={handleDecimal}>.</button>
                 <button onClick={calculateResult} className={styles.resultButton}>=</button>
 
