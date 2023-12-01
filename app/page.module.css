@@ -1,10 +1,11 @@
-/* styles/Calculator.module.css */
 .calculator {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
   width: 300px;
   margin: auto;
+  background-color: black;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
 .display {
@@ -14,6 +15,11 @@
   padding: 10px;
   margin-bottom: 10px;
   text-align: right;
+  background-color: white;
+  box-shadow: 
+  inset 0 5px 8px #191919,
+  inset 0 -1px 6px #06121d;
+  overflow: hidden;
 }
 
 .calculation {
@@ -38,8 +44,25 @@
   border-radius: 3px;
   background-color: #f9f9f9;
   cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 0 4px 8px #000000, 0px -1px 6px #41484e;
 }
 
 .grid button:hover {
   background-color: #e9e9e9;
 }
+
+.grid button:active {
+  box-shadow: 0 2px 4px #000000; /* Réduisez l'ombre pour donner l'impression d'être enfoncé */
+  transform: translateY(0.5px); /* Déplacez légèrement le bouton vers le bas */
+}
+
+
+.error {
+  background-color: #ffcccc; 
+}
+.resultButton {
+  background-color: crimson !important;
+  border: crimson !important;
+  color: whitesmoke;
+ }
