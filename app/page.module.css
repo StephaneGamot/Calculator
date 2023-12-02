@@ -2,7 +2,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  width: 300px;
+  width: 375px;
   margin: auto;
   background-color: black;
   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
@@ -34,7 +34,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 5px;
 }
 
@@ -65,6 +65,7 @@
   background-color: crimson !important;
   border: crimson !important;
   color: whitesmoke;
+  grid-column: span 2;
  }
  .numbersButton {
   background-color: darkcyan !important;
@@ -79,3 +80,8 @@
   font-weight: 700;
   color:darkcyan;
  }
+ .fonctionButton {
+  font-weight: 700;
+  color:black;
+ }
+ 
